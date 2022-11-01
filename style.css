@@ -278,7 +278,7 @@ header nav ul.action{
     position: relative;
     margin-top: 60px;
     width: 100vw;
-    height: auto;
+    height: calc(100vh-60px);
     background-color: var(--color-primario);
     border-bottom: 1px solid var(--color-primario);  
     display: flex;
