@@ -292,7 +292,7 @@ header nav ul.action{
     margin: 20px auto 20px auto;
     border: 2px solid #ffffff;
     width: auto;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     background-color: #ffffff75;
