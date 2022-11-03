@@ -243,8 +243,11 @@ header nav ul.action{
     .primero_texto p{
         padding: 30px 20px;
     }
-    .container_primero{
+    #inicio.container_primero{
         padding: 0;
+        background-image: url(./Librofondo2.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .primero_img {
         width: 100vw;
@@ -320,13 +323,15 @@ header nav ul.action{
     margin-top: 60px;
     width: 100vw;
     height: auto;
-    background-color: var(--color-primario); 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse; 
     justify-content: space-evenly;
     align-self: center;
     z-index: 10;
+    background-image: url(./Librofondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .primero_img{
     margin: 40px auto 40px auto;
@@ -335,7 +340,7 @@ header nav ul.action{
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff75;
+    background-color: #363434be;
 }
 .foto{
     display: flex;
@@ -345,7 +350,7 @@ header nav ul.action{
 .foto img{
     width: 300px;
     height: 300px;
-    border: 10px solid var(--color-secundario);
+    border: 10px solid #ffffff;
     border-radius: 50%;
     margin: 10px;
 }
@@ -359,7 +364,7 @@ header nav ul.action{
 }
 .primero_img p span{
     font-weight: bold; 
-    color: var(--color-secundario);
+    color: rgb(238, 192, 131);
     font-size: 28px;
 }
 
