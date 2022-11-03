@@ -252,6 +252,26 @@ header nav ul.action{
         display: flex;
         justify-content: space-evenly;
     }
+    #libros.container_segundo {
+        height: auto;
+    }
+    .libros_fisicos{
+        justify-content: space-evenly;
+    }
+    .libros_digitales{
+        justify-content: space-evenly;
+    }
+    .bajar{
+        display: none;
+    }
+    .primero_img div p{
+        text-align: left;
+    }
+    .primero_img div .parrafo1 p{
+        text-align: right;
+    }
+    
+
 }
 
 @media (max-width: 1100px) {
@@ -272,6 +292,28 @@ header nav ul.action{
 }
 
 /*primer div*/
+
+.bajar{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    width: 50px;
+    height: 50px;
+}
+.bajar h4{
+    width: 50px;
+    height: 50px;
+    
+    opacity: 50%;
+}
+
+.bajar h4 i {
+    color: #ffffff; 
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+}
 
 .container_primero{
     position: relative;
@@ -296,16 +338,23 @@ header nav ul.action{
     background-color: #ffffff75;
 }
 .foto{
+    display: flex;
+    align-self: center;
+
+}
+.foto img{
     width: 300px;
-    height: 533px;
-    padding: 10px;
-    border: 5px solid var(--color-secundario);
+    height: 300px;
+    border: 10px solid var(--color-secundario);
+    border-radius: 50%;
+    margin: 10px;
 }
 
 .primero_img p{
     padding: 50px 50px;  
     font-size: 26px;  
     color: #ffffff;
+    text-align: right;
 
 }
 .primero_img p span{
@@ -346,13 +395,120 @@ header nav ul.action{
     color: var(--color-primario);
 }
 
-/*segundo div*/
+/*segundo div_____________________________________________________________________________________________*/
 
 .container_segundo{
+    position: relative;
     width: 100vw;
+    padding: 65px;
     height: 100vh;
+    background-color: #ebe8e8;
+    border-bottom: 1px solid var(--color-primario);   
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*libros Fisicos-----------------------------------------------------------------------------*/
+
+.libros_fisicos{
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #000000;   
+    align-self: center; 
     background-color: #ffffff;
-    border-bottom: 1px solid var(--color-primario)0;    
+    margin-bottom: 30px;
+    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 60%), 0 0.5rem 1rem 0 rgb(0 0 0 / 5%); ;
+}
+.libros_fisicos img{
+    padding: 10px;
+    width: 100%;
+}
+.fisico_img{
+    width: 240px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.fisico_img h3{
+    padding: 0 0 0 10px;
+    font-size: 25px;
+}
+.fisico_img button{
+    width: 120px;
+    height: 30px;
+    margin: 0 10px 10px 10px;
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.fisico_texto{
+    width: 300px;
+    padding: 10px;
+}
+.fisico_texto span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.fisico_oculto{
+    display: none;
+}
+/*libros digitales-----------------------------------------------------------------------------*/
+
+.libros_digitales{
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #000000;   
+    align-self: center; 
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 60%), 0 0.5rem 1rem 0 rgb(0 0 0 / 5%); ;
+}
+.libros_digitales img{
+    padding: 10px;
+    width: 100%;
+    border-radius: 30px;
+}
+.digital_img{
+    width: 240px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.digital_img h3{
+    padding: 0 0 0 10px;
+    font-size: 25px;
+}
+.digital_img button{
+    width: 120px;
+    height: 30px;
+    margin: 0 10px 10px 10px;
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.digital_texto{
+    width: 300px;
+    padding: 10px;
+}
+.digital_texto span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.digital_oculto{
+    display: none;
 }
 
 /*tercero div*/
@@ -360,6 +516,8 @@ header nav ul.action{
 .container_tercero{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
     background-color: #ffffff; 
     border-bottom: 1px solid var(--color-primario);   
 }
@@ -380,6 +538,7 @@ footer{
     min-height: 150px;
     background-color: var(--color-primario);
 }
+
 
 .contacto_final{
     display: flex;
