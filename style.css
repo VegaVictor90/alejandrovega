@@ -273,8 +273,24 @@ header nav ul.action{
     .primero_img div .parrafo1 p{
         text-align: right;
     }
-    
-
+    .container_segundo .fisico_botones{
+        height: auto;
+    }
+    .fisico_botones .btn_1{
+        width: 150px;
+        margin: 10px 20px;
+        display: inline;
+    }
+    .fisico_botones .btn_2{
+        width: 150px;
+        margin: 10px 20px;
+        display: inline;
+    }
+    .fisico_botones .btn_3{
+        width: 150px;
+        margin: 10px 20px 15px 20px;
+        display: inline;
+    } 
 }
 
 @media (max-width: 1100px) {
@@ -426,7 +442,7 @@ header nav ul.action{
     align-self: center; 
     background-color: #ffffff;
     margin-bottom: 30px;
-    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 60%), 0 0.5rem 1rem 0 rgb(0 0 0 / 5%); ;
+    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 60%), 0 0.5rem 1rem 0 rgb(0 0 0 / 5%);
 }
 .libros_fisicos img{
     padding: 10px;
@@ -439,19 +455,10 @@ header nav ul.action{
     flex-direction: column;
 }
 .fisico_img h3{
-    padding: 0 0 0 10px;
-    font-size: 25px;
+    padding: 15px 0 0 10px;
+    font-size: 26px;
 }
-.fisico_img button{
-    width: 120px;
-    height: 30px;
-    margin: 0 10px 10px 10px;
-    background-color: var(--color-secundario);
-    border-radius: 15px;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-}
+
 .fisico_texto{
     width: 300px;
     padding: 10px;
@@ -464,6 +471,46 @@ header nav ul.action{
 .fisico_oculto{
     display: none;
 }
+
+.fisico_botones{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fisico_botones button{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 60%), 0 0.5rem 1rem 0 rgb(0 0 0 / 5%);
+}
+.fisico_botones button a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.fisico_botones button a:hover{
+    color: rgb(74, 182, 182);
+    border-bottom: 1px solid rgb(74, 182, 182)
+}
+.btn_1{
+    background-color: #000000;
+}
+.btn_2{
+    background-color: var(--color-secundario);
+    opacity: 80%;
+}
+.btn_3{
+    background-color: #283aa0;
+    opacity: 80%;
+}
+
+
 /*libros digitales-----------------------------------------------------------------------------*/
 
 .libros_digitales{
@@ -632,3 +679,7 @@ footer{
         height: 45px;
     }
 }
+
+
+
+
