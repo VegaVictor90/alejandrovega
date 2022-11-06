@@ -315,6 +315,9 @@ header nav ul.action{
     footer .datos .datos_personales{
         flex-direction: column;
     }
+    .datos_generales{
+        justify-content: space-between;
+    }
     
     
 }
@@ -620,7 +623,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-grow: 1;
 }
 .datos_generales p{
