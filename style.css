@@ -592,7 +592,7 @@ footer{
 }
 .redes_1 a i{
     padding: 8px;
-    font-size: 25px;
+    font-size: 45px;
     background-color: #ffffff;
     color: var(--color-secundario);
     margin: 20px;
@@ -611,10 +611,10 @@ footer{
 }
 .datos_personales .redes_1 a i{
     border-radius: 50%;
-    font-size: 35px;
-    padding: 7px;
+    font-size: 50px;
+    padding: 10px;
     border: 2px solid var(--color-secundario);
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 .datos_generales{
