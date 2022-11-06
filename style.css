@@ -9,6 +9,8 @@
     --color-primario: #a1753a;
     --color-secundario: #5c4323;
 }
+
+/*------------------------------------------------------------------------------------------------Cabecera*/
 header{
     width: 100vw;
     height: 60px;
@@ -92,6 +94,14 @@ nav ul li a:hover i{
     transition: 0.2s;
     color: rgb(255, 255, 255);    
 }
+
+header nav ul.action{
+   top:60px;
+   left: 0px;
+   z-index: 51;
+}
+
+/*--------------------------------------------------------------------------------------------Enlaces redes*/
 .iconos_redes{
     width: 50px;
     height: 200px;
@@ -140,11 +150,7 @@ nav ul li a:hover i{
     display: none;
 }
 
-header nav ul.action{
-   top:60px;
-   left: 0px;
-   z-index: 51;
-}
+/*-----------------------------------------------------------------------------------------------Responsive*/
 @media (max-width: 950px) {    
     header nav ul {
         position: fixed;
@@ -291,6 +297,22 @@ header nav ul.action{
         margin: 10px 20px 15px 20px;
         display: inline;
     } 
+
+    /*----------------------------------------Footer*/
+    footer .datos{
+        height: 100%;
+        margin-top: 65px;
+    }
+    .datos .datos_redes{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+        z-index: 1;
+    }
+    
 }
 
 @media (max-width: 1100px) {
@@ -303,6 +325,7 @@ header nav ul.action{
     }
 }
 
+/*--------------------------------------------------------------------------------------------------Container*/
 .container{
     width: 100vw;
     height: auto;
@@ -310,30 +333,7 @@ header nav ul.action{
     flex-direction: column; 
 }
 
-/*primer div*/
-
-.bajar{
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    right: 50%;
-    width: 50px;
-    height: 50px;
-}
-.bajar h4{
-    width: 50px;
-    height: 50px;
-    
-    opacity: 50%;
-}
-
-.bajar h4 i {
-    color: #ffffff; 
-    padding: 5px;
-    font-size: 40px;
-    text-align: center;
-}
-
+/*-------------------------------------------------------------------------------------------------primer div*/
 .container_primero{
     position: relative;
     margin-top: 60px;
@@ -416,7 +416,30 @@ header nav ul.action{
     color: var(--color-primario);
 }
 
-/*segundo div_____________________________________________________________________________________________*/
+/*-----------------------------------------------------------Flecha Bajar*/
+.bajar{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    width: 50px;
+    height: 50px;
+}
+.bajar h4{
+    width: 50px;
+    height: 50px;
+    
+    opacity: 50%;
+}
+
+.bajar h4 i {
+    color: #ffffff; 
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------segundo div*/
 
 .container_segundo{
     position: relative;
@@ -430,7 +453,7 @@ header nav ul.action{
     flex-wrap: wrap;
 }
 
-/*libros Fisicos-----------------------------------------------------------------------------*/
+/*-----------------------------------------------libros Fisicos*/
 
 .libros_fisicos{
     width: 550px;
@@ -510,60 +533,7 @@ header nav ul.action{
     opacity: 80%;
 }
 
-
-/*libros digitales-----------------------------------------------------------------------------*/
-
-.libros_digitales{
-    width: 550px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 1px solid #000000;   
-    align-self: center; 
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 60%), 0 0.5rem 1rem 0 rgb(0 0 0 / 5%); ;
-}
-.libros_digitales img{
-    padding: 10px;
-    width: 100%;
-    border-radius: 30px;
-}
-.digital_img{
-    width: 240px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-.digital_img h3{
-    padding: 0 0 0 10px;
-    font-size: 25px;
-}
-.digital_img button{
-    width: 120px;
-    height: 30px;
-    margin: 0 10px 10px 10px;
-    background-color: var(--color-secundario);
-    border-radius: 15px;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-}
-.digital_texto{
-    width: 300px;
-    padding: 10px;
-}
-.digital_texto span{
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.digital_oculto{
-    display: none;
-}
-
-/*tercero div*/
+/*---------------------------------------------------------------------------------------------tercero div*/
 
 .container_tercero{
     width: 100vw;
@@ -583,7 +553,7 @@ header nav ul.action{
     border-bottom: 1px solid var(--color-primario);   
 }
 
-/*footer*/
+/*-----------------------------------------------------------------------------------------------footer*/
 
 footer{
     width: 100vw;
@@ -591,7 +561,51 @@ footer{
     background-color: var(--color-primario);
 }
 
+.datos{
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+}
 
+/*---------------------------------------------Redes Footer*/
+.datos_redes{
+    display: none;
+}
+.redes_1 a{
+    text-decoration: none;
+}
+.redes_1 a i{
+    padding: 8px;
+    font-size: 25px;
+    background-color: #ffffff;
+    color: var(--color-secundario);
+}
+.redes_1 a i:hover {
+    background-color: var(--color-secundario);
+    color: #ffffff;
+}
+.datos_personales{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.datos_generales{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/*-------------------------------------------Realizado por*/
 .contacto_final{
     display: flex;
     flex-direction: column;    
@@ -614,12 +628,11 @@ footer{
     font-size: small;
 }
 .hecho p a{
-    color: var(--color-secundario);
+    color: #c5bebe;
     text-decoration: none;
 }
- 
-/*boton volver*/
 
+/*----------------------------------------------------boton volver*/
 .volver_container{
     position: fixed;
     bottom: 90px;
