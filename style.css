@@ -312,6 +312,10 @@ header nav ul.action{
         flex-grow: 1;
         z-index: 1;
     }
+    footer .datos .datos_personales{
+        flex-direction: column;
+    }
+    
     
 }
 
@@ -575,6 +579,11 @@ footer{
 .datos_redes{
     display: none;
 }
+.datos_redes div{
+    width: auto;
+    height: auto;
+    margin: 3px;
+}
 .redes_1 a{
     text-decoration: none;
 }
@@ -583,6 +592,7 @@ footer{
     font-size: 25px;
     background-color: #ffffff;
     color: var(--color-secundario);
+    margin: 20px;
 }
 .redes_1 a i:hover {
     background-color: var(--color-secundario);
@@ -593,16 +603,32 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-grow: 1;
 }
+.datos_personales .redes_1 a i{
+    border-radius: 50%;
+    font-size: 35px;
+    padding: 7px;
+    border: 2px solid var(--color-secundario);
+    margin-bottom: 3px;
+}
+
 .datos_generales{
     width: 300px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+}
+.datos_generales p{
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 7px 0;
+
 }
 
 /*-------------------------------------------Realizado por*/
