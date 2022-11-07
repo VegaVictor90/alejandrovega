@@ -11,7 +11,7 @@ addEventListener("DOMContentLoaded", () => {
 addEventListener("DOMContentLoaded", () => {
     const inicio = document.querySelector(".inicio")
     const libros = document.querySelector(".libros")
-    const ebooks = document.querySelector(".ebooks")
+    const sociales = document.querySelector(".sociales")
     const contacto = document.querySelector(".contacto")
     
     
@@ -27,8 +27,8 @@ addEventListener("DOMContentLoaded", () => {
             menu_items.classList.toggle("action")
         })
     }    
-    if(ebooks) {
-        ebooks.addEventListener("click", () => {
+    if(sociales) {
+        sociales.addEventListener("click", () => {
             const menu_items = document.querySelector(".menu_items")
             menu_items.classList.toggle("action")
         })
