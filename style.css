@@ -318,6 +318,13 @@ header nav ul.action{
     .datos_generales{
         justify-content: space-between;
     }
+    #sociales.container_tercero h2{
+        position: relative;
+        margin: 65px 0 10px 0;
+    }
+    #sociales.container_tercero{
+        height: auto;
+    }
     
     
 }
@@ -585,11 +592,65 @@ header nav ul.action{
     height: 100vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #ffffff; 
     border-bottom: 1px solid var(--color-primario);   
 }
+.container_tercero h2{
+    position: absolute;
+    margin: 75px;
+    color: var(--color-secundario);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sociales_diario1{
+    max-width: 610px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 20px 10px;
+    align-self: center;
+}
+.sociales_diario1 h3{
+    margin: 5px 0;
+    color: #2a68db;
+}
+.sociales_diario1 .a_1{
+    display: flex;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+    font-family: Chronicle, sans-serif;
+}
+.sociales_diario1 span{
+    text-align: right;
+}
+.sociales_diario{
+    max-width: 610px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+    border: 1px solid #000000;
+    margin: 10px 0;
+}
+.sociales_diario img{
+    width: 245px;
+    padding: 3px;
+}
+.sociales_diario p{
+    width: 350px;
+    flex-grow: 1;
+    padding: 8px;
 
-/*cuarto div*/
+}
+
+/*-----------------------------------------------------------------------------------------------cuarto div*/
 
 .container_cuarto{
     width: 100vw;
