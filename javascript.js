@@ -13,10 +13,7 @@ addEventListener("DOMContentLoaded", () => {
     const libros = document.querySelector(".libros")
     const ebooks = document.querySelector(".ebooks")
     const contacto = document.querySelector(".contacto")
-    const facebook = document.querySelector(".facebook")
-    const instagram = document.querySelector(".instagram")
-    const youtube = document.querySelector(".youtube")
-    const linkedin = document.querySelector(".linkeding")
+    
     
     if(inicio) {
         inicio.addEventListener("click", () => {
@@ -42,30 +39,7 @@ addEventListener("DOMContentLoaded", () => {
             menu_items.classList.toggle("action")
         })
     }    
-    if(facebook) {
-        facebook.addEventListener("click", () => {
-            const menu_items = document.querySelector(".menu_items")
-            menu_items.classList.toggle("action")
-        })
-    }    
-    if(instagram) {
-        instagram.addEventListener("click", () => {
-            const menu_items = document.querySelector(".menu_items")
-            menu_items.classList.toggle("action")
-        })
-    }    
-    if(youtube) {
-        youtube.addEventListener("click", () => {
-            const menu_items = document.querySelector(".menu_items")
-            menu_items.classList.toggle("action")
-        })
-    }    
-    if(linkedin) {
-        linkedin.addEventListener("click", () => {
-            const menu_items = document.querySelector(".menu_items")
-            menu_items.classList.toggle("action")
-        })
-    }    
+        
 })
 
 // volver //
@@ -82,3 +56,23 @@ window.onscroll=function(){
 
     }
 }
+
+addEventListener("DOMContentLoaded", () => {
+    const leer_mas = document.querySelector(".leer_mas")
+    if(leer_mas) {
+        leer_mas.addEventListener("click", () => {
+            const fisico_oculto = document.querySelector(".fisico_oculto")
+            fisico_oculto.classList.toggle("aparece")
+        })
+    }
+})
+
+addEventListener("DOMContentLoaded", () => {
+    const salir = document.querySelector(".salir")
+    if(salir) {
+        salir.addEventListener("click", () => {
+            const fisico_oculto = document.querySelector(".fisico_oculto")
+            fisico_oculto.classList.toggle("aparece")
+        })
+    }
+})
