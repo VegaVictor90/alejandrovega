@@ -433,7 +433,7 @@ header nav ul.action{
         height: 100vh;
         background-color: #00000098;
         top: 60px;
-        right: -100vw;
+        left: -100vw;
         transition: 0.8s;
         z-index: 200; 
         display: flex;
