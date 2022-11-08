@@ -447,38 +447,40 @@ header nav ul.action{
         width: 100vw;
         height: 100vh;
         background-color: #00000098;
-        top: 60px;
         left: -100vw;
         transition: 0.8s;
         z-index: 200; 
         display: flex;
         justify-content: space-evenly;
-        align-self: center;
+        align-items: center;
 }
 .oculto{
+    margin: auto;
     display: flex;
     width: 400px;
-    height: auto;
-    padding: 20px;
+    height: 70%;
+    padding: 5px 5px 20px 20px;
     text-align: left;
-    background-color: #ffffff;
-    overflow: auto;
+    background-color: #ffffff;    
 }
 .oculto span{
     font-size: 17px;
-    font-weight: bold;
+    font-weight: bold;    
 }
-.oculto{
+.oculto p{
+    margin-top: 15px;
     font-size: 16px;
+    overflow: auto;
 }
 .fisico_oculto.aparece{
-    top:60px;
+    top:0px;
     left: 0px;
     z-index: 201;
  }
  .salir{
     cursor: pointer;
     font-size: 20px;
+    height: 20px;
  }
 
 /*-----------------------------------------------------------Flecha Bajar*/
@@ -563,7 +565,7 @@ header nav ul.action{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    
 }
 .fisico_botones button{
     width: 120px;
@@ -578,19 +580,21 @@ header nav ul.action{
     color: #ffffff;
 }
 .fisico_botones button a:hover{
-    color: rgb(74, 182, 182);
-    border-bottom: 1px solid rgb(74, 182, 182)
+    border-bottom: 1px solid rgb(255, 255, 255)
 }
 .btn_1{
-    background-color: #000000;
+    background-color: #27b33e;
 }
 .btn_2{
-    background-color: var(--color-secundario);
+    background-color: rgb(29, 104, 189);
     opacity: 80%;
 }
 .btn_3{
-    background-color: #283aa0;
+    background-color: #000000;
     opacity: 80%;
+}
+.btn_3 I{
+    color: rgb(199, 134, 13);
 }
 
 /*---------------------------------------------------------------------------------------------tercero div*/
