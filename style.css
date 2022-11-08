@@ -298,8 +298,8 @@ header nav ul.action{
         display: inline;
     } 
     .fisico_oculto .oculto{
-        height: 400px;
-        margin-top: 50px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     .fisico_oculto .oculto p{
         padding: 10px;
