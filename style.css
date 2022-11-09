@@ -297,6 +297,11 @@ header nav ul.action{
         margin: 10px 20px 15px 20px;
         display: inline;
     } 
+    .fisico_botones .btn_4{
+        width: 150px;
+        margin: 10px 20px 15px 20px;
+        display: inline;
+    } 
     .fisico_oculto .oculto{
         margin-top: 60px;
         margin-bottom: 60px;
@@ -558,43 +563,68 @@ header nav ul.action{
     font-weight: bold;
 }
 
+.adquirir{
+    color: #5c5b5b;
+    width: 100%;
+    margin: 4px 0 7px 0;
+    padding-top: 4px;
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid #5c5b5b ;
+}
 .fisico_botones{
     width: 100%;
     height: 45px;
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    flex-grow: 1;    
 }
 .fisico_botones button{
     width: 120px;
-    height: 30px;
+    height: 35px;
     border: none;
     box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 60%), 0 0.5rem 1rem 0 rgb(0 0 0 / 5%);
+    flex-grow: 1;
 }
 .fisico_botones button a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: #ffffff;
 }
 .fisico_botones button a:hover{
-    border-bottom: 1px solid rgb(255, 255, 255)
+    color: #a7a7a7;
 }
 .btn_1{
     background-color: #27b33e;
 }
 .btn_2{
-    background-color: rgb(29, 104, 189);
-    opacity: 80%;
+    background-color: rgb(206, 49, 49);    
 }
 .btn_3{
-    background-color: #000000;
-    opacity: 80%;
+    background-color: #363535;   
 }
 .btn_3 I{
     color: rgb(199, 134, 13);
+}
+.btn_4{
+    background-color: #e4e019;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn_4 .ml{
+    color: rgb(30, 61, 236);
+    line-height: 12px;
+}
+.btn_4 img{
+    width: 50px;
+    display: inline-block;
 }
 
 /*---------------------------------------------------------------------------------------------tercero div*/
@@ -605,7 +635,7 @@ header nav ul.action{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #ffffff; 
     border-bottom: 1px solid var(--color-primario);   
 }
@@ -647,7 +677,7 @@ header nav ul.action{
     text-align: right;
 }
 .sociales_diario{
-    max-width: 610px;
+    max-width: 595px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -662,7 +692,7 @@ header nav ul.action{
     padding: 3px;
 }
 .sociales_diario p{
-    width: 350px;
+    width: 345px;
     flex-grow: 1;
     padding: 8px;
 
@@ -727,10 +757,9 @@ footer{
     flex-grow: 1;
 }
 .datos_personales .redes_1 a i{
-    border-radius: 50%;
-    font-size: 50px;
+    font-size: 45px;
     padding: 10px;
-    border: 2px solid var(--color-secundario);
+    
     margin-bottom: 5px;
 }
 
