@@ -746,7 +746,7 @@ header nav ul.action{
 .container_cuarto{
     width: 100vw;
     height: 100vh;
-    background-color: #ffffff; 
+    background-color: var(--color-primario); 
     border-bottom: 1px solid var(--color-primario);   
     display: flex;
     flex-wrap: wrap;
@@ -758,6 +758,7 @@ header nav ul.action{
     height: 45px;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
 }
 .cuarto{
     width: 900px;
@@ -770,6 +771,7 @@ header nav ul.action{
 .img-agenda img{
     width: 400px;
     padding: 20px;
+    filter: contrast(135%);
 }
 .tabla_eventos{
     flex-grow: 1;
@@ -808,7 +810,7 @@ tbody tr:hover{
 footer{
     width: 100vw;
     min-height: 150px;
-    background-color: var(--color-primario);
+    background-color: #2e2d2d;
 }
 
 .datos{
@@ -836,12 +838,10 @@ footer{
 .redes_1 a i{
     padding: 8px;
     font-size: 45px;
-    background-color: #ffffff;
     color: var(--color-secundario);
     margin: 20px;
 }
 .redes_1 a i:hover {
-    background-color: var(--color-secundario);
     color: #ffffff;
 }
 .datos_personales{
