@@ -322,7 +322,7 @@ header nav ul.action{
         padding: 10px;
     }
     #agenda.container_cuarto{
-        height: auto;
+        min-height: 100vw;
     }
     #agenda.container_cuarto h4{
         margin-top: 65px;
