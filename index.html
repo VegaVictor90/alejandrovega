@@ -1,969 +1,204 @@
-*,*:after, *:before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alejandro Martin Vega</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="El Guardian de la sabiduria, Libros, Literatura, lectura">
+        <meta name="description" content="Pagina web Alejandro Martin Vega, escritor">
+        <meta author="Alejandro Martin Vega" name="Alejandro Martin Vega">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="iconos.css">
+        <link rel="shortcut icon" href="/icomoon.svg/icon-quill">
+        <script src="javascript.js" defer></script>  
+    </head>
+    <body>
+       <header>
+           <nav>               
+               <a href="#"><h1>Alejandro Martín Vega </h1>  <i class="icon icon-quill"></i> <span>Escritor</span></a>
+               <ul class="menu_items">
+                   <li><a class="inicio" href="#"><i class="icon icon-arrow-up2"></i>  INICIO</a></li>
+                   <li><a class="libros" href="#libros"><i class="icon icon-book"></i>  LIBROS</a></li>
+                   <li><a class="sociales" href="#sociales"><i class="icon icon-newspaper"></i>  SOCIALES</a></li>
+                   <li><a class="agenda" href="#agenda"><i class="icon icon-calendar"></i>  AGENDA</a></li>
+                   <li><a class="contacto" href="#contacto"><i class="icon icon-mail2"></i>  CONTACTO</a></li>               
+               
+               </ul>
+               <div class="menu_oculto"><i class="icon icon-menu"></i></div>
+           </nav>
+        </header>
+        <!-- Volver -->            
+        <div class="volver_container">                
+            <div class="volver_boton">
+                <a href="#"><i class="icon icon-ctrl"></i></a>
+            </div>
+        </div>
+        <!-- Volver -->
+        <div class="container">
+               <div class="iconos_redes">
+                   <div><span class="redes"><a href="https://www.facebook.com/medieval.cervezafernet.7" target="_blank"><i class="icon icon-facebook"></i></a></span></div> 
+                   <div><span class="redes"><a href="https://www.instagram.com/alejandro_martin_vega/" target="_blank"><i class="icon icon-instagram"></i></a></span></div>   
+                   <div><span class="redes"><a href="#"><i class="icon icon-youtube"></i></a></span></div>    
+                   <div><span class="redes"><a href="#"><i class="icon icon-linkedin2"></i></a></span></div>    
+               </div>
+            <div class="container_primero" id="inicio">                
+                <div class="primero_img">
+                    <div class="foto"><img src="./imgperfil1.jpg" alt="Alejandro Martin Vega"></div>
+                    <div>
+                    <div><p>Hola, soy <span> Alejandro Martín Vega.</span> <br>Escritor novelista y cuentista de diversos géneros literarios como: <br>aventura, suspenso, ciencia ficción, drama y auto ayuda.<br>
+                        Nacido en Vedia, Buenos Aires, Argentina. El 15 de enero de 1982. <br>Empresario en la actualidad. Apasionado por la historia, <br>la filosofía y la psicología social.</p></div>
+                    <div class="parrafo1"><p>"Todo el universo se reduce<br> a la última persona en la que pensas<br> al final de cada día. <br>Ahí es donde está tu corazón 🍀"</p></div>
+                   </div>
+                   <div class="bajar">
+                    <h4>
+                        <i class="icon icon-arrow-down2"></i>
+                    </h4>
+                   </div>
+                </div>
+                <!-- Volver 
+                <div class="primero_texto">
+                    <span><p>"A mi hijo Santiago" <br><br>Mientras que mis labios no dejen de extrañar la suavidad <br> de tus mejillas, mis ojos te buscan en el horizonte <br>preguntandose <br><br>¿Como no va hacer bonito el cielo? Si desde que te <br>mudaste alli, de dias eres el sol que hace resplandecer a <br>mi alma. Y de noche, la estrella mas grande y brillante <br>que mantiene vivo a mi corazon </p></span>
+                </div>-->
+            </div>
+            <div class="container_segundo" id="libros">
+                <h3>Libros</h3>
+                <div class="libros_fisicos">
+                   <div class="fisico_img">
+                       
+                       <img src="./Libro_1.jpg" alt="">
+                    </div>
+                   <div class="fisico_texto"><p><span>EL GUARDIÁN DE LA SABIDURÍA</span><br> (Spanish Edition)<br><br>
 
-:root{
-    --color-primario: #a1753a;
-    --color-secundario: #5c4323;
-}
+                    <span> Alejandro Martín Vega</span><br><br>
+                    
+                       Hace miles de años un joven llamado Nadib, de noble corazón y sentimientos puros, se lanzó a la aventura de recorrer toda la Mesopotamia en busca de la aprobación de su malvado rey para poder casarse con su hija...</p>
+                       <span class="leer_mas"><i> (Leer mas.)</i></span>
+                       <div class="fisico_botones">
+                        <h4 class="adquirir">Podes adquirir tu libro en los siguientes enlaces</h4>
+                        <button class="btn_1"><a href="https://api.whatsapp.com/send/?phone=5492364349168&text=Hola Alejandro, tengo interes en tu libro..." target="_blank"><i class="icon icon-whatsapp"></i> Contacto</a></button>
+                        <button class="btn_2"><a href="mailto:vega44195alejandro@gmail.com?Subject=Quiero%20adquirir%20un%20libro"><i class="icon icon-mail2"></i> Email</a></button>                                                
+                        <button class="btn_3"><a href="https://www.amazon.com/dp/B0BBHBQZ5R" target="_blank">amazon<i class="icon icon-amazon"></i></a></button>
+                        <button class="btn_4">
+                            <div><img src="./mercadolibre.png" alt=""></div>
+                            <div><a class="ml" href="https://articulo.mercadolibre.com.ar/MLA-1189292813-libro-el-guardian-de-la-sabiduria-_JM#position=23&search_layout=stack&type=item&tracking_id=07854dec-2f4b-4d0b-821e-0643ae673263" target="_blank">mercado<br>libre</a></div>
+                        </button>
+                        </div>
+                   </div>
+                   <div class="fisico_oculto">
+                       <div class="oculto">                          
 
-/*------------------------------------------------------------------------------------------------Cabecera*/
-header{
-    width: 100vw;
-    height: 60px;
-    border-bottom: 1px solid var(--color-primario);
-    display: flex;
-    align-items: center;
-    position: fixed;
-    background-color: #ffffff;
-    z-index: 60;
-}
-nav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    align-items: center;
-    z-index: 52;
-}
-nav h1{       
-    padding-left: 30px;   
-    font-size: 25px; 
-    display: inline-block;
-}
-nav a{
-    text-decoration: none;
-    font-size: x-large;
-    font-family: Georgia, serif;
-    color: var(--color-secundario);
-    flex-grow: 1;
-}
-nav a span{
-    font-family: 'Times New Roman', Times, serif, cursive;
-    font-style: italic;
-    font-size: 15px;
-    color: #5c5b5b;
-}
-nav ul{
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-nav i:hover {
-    padding: 5px;
-    color: #ffffff;
-    transition: .3s;
-    background-color: var(--color-secundario);
-}
-nav ul li{
-    width: 100px;
-    height: 35px;
-    list-style: none;
-    margin: 0 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: .3s;
-}
-nav  i{
-    color:var(--color-secundario);
-    padding: 5px;
-    border-radius: 50%;
-}
-header nav ul li a{
-    width: 100px;
-    height: 35px;
-    color: var(--color-secundario);
-    text-decoration: none;  
-    text-align: center;
-    padding-top: 11.5px;
-    font-family: sans-serif;
-    font-size: 12PX;    
-}
-nav ul li a:hover{
-    background-color: var(--color-secundario);
-    transition:  0.8s;
-    color: rgb(255, 255, 255);
-}
-nav ul li a:hover i{
-    transition: 0.2s;
-    color: rgb(255, 255, 255);    
-}
+                           <p><span>EL GUARDIÁN DE LA SABIDURÍA</span><br> (Spanish Edition)<br><br>
+   
+                           <span> Alejandro Martín Vega</span><br><br>
+                 
+                           Hace miles de años un joven llamado Nadib, de noble corazón y sentimientos puros, se lanzó a la aventura de recorrer toda la Mesopotamia en busca de la aprobación de su malvado rey para poder casarse con su hija, la princesa de Babilonia.
+                           En el trascurso de su travesía, encuentra a un misterioso duende que lo ayuda y le da los consejos más importantes para el éxito de cualquier ser humano. Y por la humildad de sus actos, Nadib se hace dueño del alma y el corazón de la persona más conocida que caminó en la Tierra, “alguien que seguramente el lector sabe muy bien quien es”.
+                           Sobre el final de su aventura, en una época donde aún no existía la escritura moderna, ni redes sociales, ni internet. Al joven Nadib, le es encomendada la dificilísima tarea de dar a conocer al mundo entero todas las sabidurías del universo.
+                           ¿Quieres saber cómo hizo? ...te invito a descubrirlo.
+                           Tenga la edad que tenga, espero que aquella persona que posee este libro entre sus manos disfrute de esta maravillosa y emocionante historia, tanto como lo hice yo al escribirla.</p>
+                           
+                           <div class="salir"><i class="icon icon-cancel-circle"></i></div>
+                       </div>                       
+                   </div>                   
+                   <!--<div class="fisico_botones">
+                        <h4 class="adquirir">Podes adquirir tu libro en los siguientes enlaces</h4>
+                        <button class="btn_1"><a href="https://api.whatsapp.com/send/?phone=5492364349168&text=Hola Alejandro, tengo interes en tu libro..." target="_blank"><i class="icon icon-whatsapp"></i> Contacto</a></button>
+                        <button class="btn_2"><a href="mailto:vega44195alejandro@gmail.com?Subject=Quiero%20adquirir%20un%20libro"><i class="icon icon-mail2"></i> Email</a></button>                        
+                        <button class="btn_3"><a href="https://www.amazon.com/dp/B0BBHBQZ5R" target="_blank">amazon<i class="icon icon-amazon"></i></a></button>
+                        <button class="btn_4">
+                            <div><img src="./mercadolibre.png" alt=""></div>
+                            <div><a class="ml" href="https://articulo.mercadolibre.com.ar/MLA-1189292813-libro-el-guardian-de-la-sabiduria-_JM#position=23&search_layout=stack&type=item&tracking_id=07854dec-2f4b-4d0b-821e-0643ae673263" target="_blank">mercado<br>libre</a></div>
+                        </button>
+                    </div> -->                
+                </div>
+            </div>
+            <div class="container_tercero" id="sociales">
+                <h2>Sociales</h2>
+                <div class="sociales_diario1">
+                     <h3>Diario: El Vediense</h3>
+                     <a class="a_1" href="">Alejandro Martín Vega hizo la presentación de su primer libro «El Guardián de la Sabiduría»</a>
+                     <div class="sociales_diario">
+                         <img src="./imgperfil.jpg" alt="alejandro vega">
+                         <p>Como estaba anunciado en el día de hoy a las 19 hs, y con una sala de la Biblioteca Municipal Pública Popular "Esteban Echeverría" completa de gente, el vediense Alejandro Martín Vega hizo la presentación de su primer libro "El Guardián de la Sabiduría", abriéndose así a través de su debut el camino como escritor de nuestra ciudad. Acompañaron la presentación las integrantes… <a href="https://elvediense.com.ar/2022/10/22/alejandro-martin-vega-hizo-la-presentacion-de-su-primer-libro-el-guardian-de-la-sabiduria/" target="_blank"> (Leer mas.)</a></span></p>
+                     </div>
+                     <Span>22 octubre, 2022</Span>
+                </div>    
+                <div class="sociales_diario1">
+                    <h3>Biblioteca de Vedia -Facebook-</h3>
+                    <a class="a_1" href="">Tarde de lujo en la biblio con la presentación del libro del autor local  Alejandro Martín Vega</a>
+                    <div class="sociales_diario">
+                        <img src="./biblioteca.jpg" alt="Alejandro-Biblioteca de Vedia">
+                        <p>"El guardián de la sabiduría".
+                            Se inició el acto con palabras de la Sra Natalia Salazar hablando sobre el autor, luego Alejandro habló sobre su libro dando el lugar a la Sra Elsa Martino para que leyera un fragmento del mismo.
+                            Por último el autor dió lugar al público para que hiciera preguntas iniciando una rueda muy interesante dando respuesta a todas las inquietudes. 
+                            Hubo mucho… <a href="https://www.facebook.com/BibliotecaDeVedia/posts/pfbid0Yqa2hbEi345FZqBH96Uu3TTbPvX7Z3zwdJS37kFHKZfWomiRUpC89K8eAD1tjV2ul" target="_blank"> (Leer mas.)</a></span></p>
+                    </div>
+                    <Span>24 Octubre, 2022</Span>
+               </div>              
+               <div class="sociales_diario1">
+                <h3>Escuela Técnica Nº 1-Facebook-</h3>
+                <a class="a_1" href="">Escuela Técnica Nº 1 "Dr. Bernardo Alberto Houssay".</a>
+                <div class="sociales_diario">
+                    <img src="./Escuela Tecnica.jpg" alt="Alejandro-Biblioteca de Vedia">
+                    <p>"El guardián de la sabiduría".
+                        Alejandro Vega presentó su libro "El Guardián de la Sabiduría", en el SUM de nuestra escuela.… <a href="https://www.facebook.com/escuelatecnica1vedia" target="_blank"> (Leer mas.)</a></span></p>
+                </div>
+                <Span>11 Noviembre, 2022</Span>
+           </div>         
+            </div>
+            <div class="container_cuarto" id="agenda">
+                <h4>Proximos Eventos</h4>
+                <div class="cuarto">
+                    <div class="img-agenda"><img src="./agenda-melpom-1629886878.jpeg" alt=""></div>
+                    <div class="tabla_eventos">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Lugar</th>
+                                    <th>Presentacion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2023</td>
+                                    <td>Cordoba</td>
+                                    <td>El Guardian de la sabiduria</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>2023</td>
+                                    <td>Cordoba</td>
+                                    <td>El Guardian de la sabiduria</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-header nav ul.action{
-   top:60px;
-   left: 0px;
-   z-index: 51;
-}
-
-/*--------------------------------------------------------------------------------------------Enlaces redes*/
-.iconos_redes{
-    width: 50px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-self: center;
-    position: fixed;
-    right: 0;
-    bottom: 50%;
-    top: 50%;
-    z-index: 120;
-    transform: translateY(-40%);
-    background-color: #ffffff;
-}
-.iconos_redes div{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-self: center;
-
-}
-.iconos_redes a{
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    display: flex;
-    align-self: center;   
-}
-.iconos_redes a i{
-    color: var(--color-secundario); 
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    text-align: center;
-    padding-top: 12.5px;
-}
-.redes a i:hover {   
-    background-color: var(--color-secundario);
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
-    
-}
-
-.menu_oculto{
-    display: none;
-}
-
-/*-----------------------------------------------------------------------------------------------Responsive*/
-@media (max-width: 950px) {    
-    header nav ul {
-        position: fixed;
-        width: 100vw;
-        height: auto;
-        background-color: #ffffff;
-        opacity: 80%;
-        top: 60px;
-        left: -100vw;
-        text-align: center;
-        transition: all .4s;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: flex-start;
-        font-size: 20px;  
-        z-index: 50;              
-    }  
-    .iconos_redes{
-        display: none;
-    }
-    nav ul li a:hover{
-        background-color: var(--color-secundario);
-        transition:  0.8s;
-        color: #ffffff;
-    } 
-    nav ul li a:hover i{
-        transition: 0.2s;
-        color: #ffffff;
-    }
-    nav h1{
-        padding-left: 5px;
-        font-size: 20px;
-    }
-    nav a{
-        font-size: 18px;
-    }
-    .menu_items li {
-        width: 100%;
-        height: 60px;
-        margin-top: 10px;
-    } 
-    .menu_items li a{
-        width: 100%;
-        height: 60px;
-        color: var(--color-secundario);
-        font-size: 18px;
-        padding-top: 21px;        
-    }
-
-    .iconos_redes{
-        display: fixed;
-        flex-direction: column;
-        flex-grow: 1;
-    }
-    .iconos_redes a i{
-        color: var(--color-primario);
-    }
-    .iconos_redes div{
-        width: 50px;
-        height: 50px;
-    }
-    .iconos_redes div span{
-        width: 50px;
-        height: 50px;
-    }
-    .iconos_redes div span i:hover{
-        background-color: var(--color-primario);
-        color: #ffffff;
-        
-    }
-    .iconos_redes div span a{
-        width: 50px;
-        height: 50px;
-    }
-    .iconos_redes div span a i{
-        width: 50px;
-        height: 50px;
-        padding-top: 10px;
-        z-index: 100;
-    }
-
-    .menu_oculto{
-        display: flex;
-        margin-right: 30px;
-        cursor: pointer;
-        z-index: 100;
-    }
-    .menu_oculto i{
-        font-size: 30px;
-        z-index: 100;
-        color: var(--color-secundario);
-    }
-    footer{
-        height: 100vh;
-    }
-    
-    .primero_texto p{
-        padding: 30px 20px;
-    }
-    #inicio.container_primero{
-        padding: 0;
-        background-image: url(./Librofondo2.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .primero_img {
-        width: 100vw;
-        height: auto;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    #libros.container_segundo {
-        height: auto;
-    }
-    .libros_fisicos{
-        justify-content: space-evenly;
-    }
-    .libros_digitales{
-        justify-content: space-evenly;
-    }
-    .bajar{
-        display: none;
-    }
-    .primero_img div p{
-        text-align: left;
-    }
-    .primero_img div .parrafo1 p{
-        text-align: right;
-    }
-    .container_segundo .fisico_botones{
-        height: auto;
-    }
-    .fisico_botones .btn_1{
-        width: 150px;
-        margin: 10px 20px;
-        display: inline;
-    }
-    .fisico_botones .btn_2{
-        width: 150px;height: 30px;
-        margin: 10px 20px;
-        display: inline;
-    }
-    .fisico_botones .btn_3{
-        width: 150px;
-        margin: 10px 20px 15px 20px;
-        display: inline;
-    } 
-    .fisico_botones .btn_4{
-        width: 150px;
-        margin: 10px 20px 15px 20px;
-        display: inline;
-        display: flex;
-        flex-direction: row;
-    } 
-    .btn_4 a.ml{
-        margin-left: 0px;
-        
-    }
-    button.btn_4 img{
-        width: 40px;
-    }
-    
-    .fisico_oculto .oculto{
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-    .fisico_oculto .oculto p{
-        padding: 10px;
-    }
-    #agenda.container_cuarto{
-        height: auto;
-    }
-    #agenda.container_cuarto h4{
-        margin-top: 65px;
-    }
-    div.cuarto{
-        width: 100vw;
-        height: auto;
-        justify-content: center;
-    }
-    table{
-        padding: 35px 0;
-    }
-    
-
-    /*----------------------------------------Footer*/
-    footer .datos{
-        height: 100%;
-        margin-top: 65px;
-    }
-    .datos .datos_redes{
-        display: flex;
-        width: 100vw;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        flex-grow: 1;
-        z-index: 1;
-    }
-    footer .datos .datos_personales{
-        flex-direction: column;
-    }
-    .datos_generales{
-        justify-content: space-between;
-    }
-    #sociales.container_tercero h2{
-        position: relative;
-        margin: 65px 0 10px 0;
-    }
-    #sociales.container_tercero{
-        height: auto;
-    }
-    
-    
-}
-
-@media (max-width: 1100px) {
-    nav ul li{
-        width: 90px;
-        margin: 0;
-    }
-    header nav h4{
-        width: 300px;
-    }
-}
-
-/*--------------------------------------------------------------------------------------------------Container*/
-.container{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column; 
-}
-
-/*-------------------------------------------------------------------------------------------------primer div*/
-.container_primero{
-    position: relative;
-    margin-top: 60px;
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse; 
-    justify-content: space-evenly;
-    align-self: center;
-    z-index: 10;
-    background-image: url(./Librofondo.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.primero_img{
-    margin: 40px auto 40px auto;
-    border: 4px solid #ffffff;
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #363434be;
-}
-.foto{
-    display: flex;
-    align-self: center;
-
-}
-.foto img{
-    width: 300px;
-    height: 300px;
-    border: 10px solid #ffffff;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-.primero_img p{
-    padding: 50px 50px;  
-    font-size: 26px;  
-    color: #ffffff;
-    text-align: right;
-
-}
-.primero_img p span{
-    font-weight: bold; 
-    color: rgb(238, 192, 131);
-    font-size: 28px;
-}
-
-.parrafo1{
-    font-family: 'Times New Roman', Times, serif, cursive; 
-    font-style: italic;
-    text-align: right;
-    color: #ffffff;
-}
-
-.primero_texto{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.primero_texto span{
-    width: 450px;
-    height: auto;
-    display: flex;
-    align-items: center;    
-    background-color: #ffffff;
-    border-radius: 20px;
-}
-
-.primero_texto p{
-    font-size: 18px;
-    text-align: right;
-    padding: 20px 20px;
-    font-family: 'Times New Roman', Times, serif, cursive; 
-    font-style: italic;
-    color: var(--color-primario);
-}
-/*-----------------------------------------------------------Leer Mas*/
-.leer_mas{
-    cursor: pointer;
-}
-
-.fisico_oculto{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background-color: #00000098;
-        left: -100vw;
-        transition: 0.8s;
-        z-index: 200; 
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-}
-.oculto{
-    margin: auto;
-    display: flex;
-    width: 400px;
-    height: 70%;
-    padding: 5px 5px 20px 20px;
-    text-align: left;
-    background-color: #ffffff;    
-}
-.oculto span{
-    font-size: 17px;
-    font-weight: bold;    
-}
-.oculto p{
-    margin-top: 15px;
-    font-size: 16px;
-    overflow: auto;
-}
-.fisico_oculto.aparece{
-    top:0px;
-    left: 0px;
-    z-index: 201;
- }
- .salir{
-    cursor: pointer;
-    font-size: 20px;
-    height: 20px;
- }
-
-/*-----------------------------------------------------------Flecha Bajar*/
-.bajar{
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    right: 50%;
-    width: 50px;
-    height: 50px;
-}
-.bajar h4{
-    width: 50px;
-    height: 50px;
-    
-    opacity: 50%;
-}
-
-.bajar h4 i {
-    color: #ffffff; 
-    padding: 5px;
-    font-size: 40px;
-    text-align: center;
-}
-
-/*-----------------------------------------------------------------------------------------------segundo div*/
-
-.container_segundo{
-    position: relative;
-    width: 100vw;
-    padding-top: 65px;
-    height: 100vh;
-    background-color: #ebe8e8;
-    border-bottom: 1px solid var(--color-primario);   
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/*-----------------------------------------------libros Fisicos*/
-
-.libros_fisicos{
-    width: 900px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;      
-    align-self: center; 
-    margin-bottom: 30px;
-    justify-content: center;
-    
-}
-.libros_fisicos img{
-    width: 100%;
-    border-radius: 30px;
-}
-.fisico_img{
-    width: 290px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin-right: 35px;
-    padding-top: 10px;
-}
-.container_segundo h3{
-    padding-top: 10px;
-    width: 100vw;
-    height: 50px;
-    font-size: 30px;
-    margin-bottom: 10px;
-    background-color: var(--color-primario);
-    color: #ffffff;
-    text-align: center;
-    padding-left: 0;
-}
-
-.fisico_texto{
-    width: 300px;
-    padding: 10px;
-}
-.fisico_texto span{
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.adquirir{
-    color: #5c5b5b;
-    width: 300px;
-    height: 20px;
-    margin: 5px 0;
-    padding-top: 4px;
-    font-size: 12px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.fisico_botones{
-    width: 300px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;      
-}
-.fisico_botones button{
-    width: 150px;
-    height: 32px;
-    border: none;
-    margin: 8px 0;
-    margin-left: 5px;
-    border-radius: 6px; 
-}
-.fisico_botones a{
-    width: 150px;
-    height: 32px;
-    border: none;
-    margin: 8px 0;
-    margin-left: 5px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: #ffffff;
-}
-.fisico_botones button a:hover{
-    font-size: 15px;
-    transition: 1s;
-    color: #000000;   
-}
-.btn_1{
-    background-color: #27b33e;
-}
-.btn_2{
-    background-color: rgb(206, 49, 49);    
-}
-.btn_3{
-    background-color: #363535;   
-}
-.btn_3 I{
-    color: rgb(199, 134, 13);
-}
-.btn_4{
-    background-color: #e4e019;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.btn_4 .ml{
-    color: rgb(30, 61, 236);
-    line-height: 12px;   
-}
-.btn_4 img{
-    width: 30px;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-/*---------------------------------------------------------------------------------------------tercero div*/
-
-.container_tercero{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ffffff; 
-    border-bottom: 1px solid var(--color-primario);   
-}
-.container_tercero h2{
-    width: 100vw;
-    text-align: center;
-    position: relative;
-    margin-top: 75px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 1px solid #000000;
-    border-top: 1px solid #000000;
-    padding: 10px 0;
-    background-color: var(--color-primario);
-}
-.sociales_diario1{
-    max-width: 610px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-direction: column;
-    margin: 20px 10px;
-    align-self: center;
-}
-.sociales_diario1 h3{
-    margin: 5px 0;
-    color: #2a68db;
-}
-.sociales_diario1 .a_1{
-    display: flex;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    font-weight: bold;
-    font-family: Chronicle, sans-serif;
-}
-.sociales_diario1 span{
-    text-align: right;
-}
-.sociales_diario{
-    max-width: 595px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-self: center;
-    border: 1px solid #000000;
-    margin: 10px 0;
-}
-.sociales_diario img{
-    width: 245px;
-    padding: 3px;
-}
-.sociales_diario p{
-    width: 345px;
-    flex-grow: 1;
-    padding: 8px;
-
-}
-
-/*-----------------------------------------------------------------------------------------------cuarto div*/
-
-.container_cuarto{
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffff; 
-    border-bottom: 1px solid var(--color-primario);   
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.container_cuarto h4{
-    height: 45px;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.cuarto{
-    width: 900px;
-    height: 400px;
-    background-color: #ebe8e8;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.img-agenda img{
-    width: 400px;
-    padding: 20px;
-}
-.tabla_eventos{
-    flex-grow: 1;
-}
-table{
-    color: #363535;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-th{
-    padding: 10px 30px;
-    background-color: var(--color-primario);
-    color: #ffffff;
-}
-td{
-    padding: 10px 3px;
-    text-align: center;
-    border-bottom: solid 1px var(--color-primario);
-}
-tbody tr{
-    border: 1px solid var(--color-primario);
-}
-tbody tr:hover{
-    cursor: pointer;
-    background-color: #5c5b5b36;
-    color: #ffffff;
-}
-
-
-/*-----------------------------------------------------------------------------------------------footer*/
-
-footer{
-    width: 100vw;
-    min-height: 150px;
-    background-color: var(--color-primario);
-}
-
-.datos{
-    width: 100vw;
-    height: 120px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-self: center;
-}
-
-/*---------------------------------------------Redes Footer*/
-.datos_redes{
-    display: none;
-}
-.datos_redes div{
-    width: auto;
-    height: auto;
-    margin: 3px;
-}
-.redes_1 a{
-    text-decoration: none;
-}
-.redes_1 a i{
-    padding: 8px;
-    font-size: 45px;
-    background-color: #ffffff;
-    color: var(--color-secundario);
-    margin: 20px;
-}
-.redes_1 a i:hover {
-    background-color: var(--color-secundario);
-    color: #ffffff;
-}
-.datos_personales{
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-grow: 1;
-}
-.datos_personales .redes_1 a i{
-    font-size: 45px;
-    padding: 10px;
-    
-    margin-bottom: 5px;
-}
-
-.datos_generales{
-    width: 300px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-grow: 1;
-}
-.datos_generales p{
-    color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    padding: 7px 0;
-
-}
-
-/*-------------------------------------------Realizado por*/
-.contacto_final{
-    display: flex;
-    flex-direction: column;    
-    align-self: flex-end;
-    justify-content: flex-end;
-}
-
-.hecho{
-    width: 280px;
-    border-top: 1px solid#ffffff;
-    display: flex;
-    align-self: center;
-    justify-content: space-evenly;
-}
-.hecho p{
-    color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    padding: 7px 0;
-    font-size: small;
-}
-.hecho p a{
-    color: #c5bebe;
-    text-decoration: none;
-}
-
-/*----------------------------------------------------boton volver*/
-.volver_container{
-    position: fixed;
-    bottom: 90px;
-    right: 0px;
-    width: 50px;
-    height: 50px;
-    z-index: -1;
-}
-
-.volver_boton{
-    width: 0px;
-    height: 0px;
-    cursor: pointer;
-    transition: 0.2s;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-}
-
-.volver_boton i{    
-    position: absolute;
-    font-size: 40px;
-    top: 65%;
-    left: 50%;
-    transform: translate( -50%, -50%) scale(0);
-    color: rgb(255, 255, 255);
-    transition: .2s;
-}
-
-.show{
-    z-index: 100;
-}
-
-.show .volver_boton{
-    animation: popup .3s ease-in-out;
-    width: 50px;
-    height: 50px;
-    background-color: var(--color-secundario);
-    z-index: 11;
-    border: 0.5px solid #ffffff;
-}
-.show i{
-    transform: translate( -50%, -50%) scale(1);
-}
-
-@keyframes popup{
-    0%{
-        width: 0px;
-        height: 0px;
-    }
-    50%{
-        width: 60px;
-        height: 60px;
-    }
-    100%{
-        width: 45px;
-        height: 45px;
-    }
-}
-
-
-
-
+            </div>
+        </div>   
+    </body>
+    <footer id="contacto" class="contacto_final">
+        <div class="datos">
+            <div class="datos_redes">
+               <div><span class="redes_1"><a href="https://www.facebook.com/medieval.cervezafernet.7" target="_blank"><i class="icon icon-facebook"></i></a></span></div> 
+                <div><span class="redes_1"><a href="https://www.instagram.com/alejandro_martin_vega/" target="_blank"><i class="icon icon-instagram"></i></a></span></div>   
+                <div><span class="redes_1"><a href="#"><i class="icon icon-youtube"></i></a></span></div>    
+               <div><span class="redes_1"><a href="#"><i class="icon icon-linkedin2"></i></a></span></div> 
+               
+            </div>
+            <div class="datos_personales">
+                <div><span class="redes_1"><a href="https://api.whatsapp.com/send/?phone=5492364349168&text=Hola Alejandro, te escribo desde tu web..." target="_blank"><i class="icon icon-whatsapp"></i></a></span></div>
+                <div><span class="redes_1" ><a href="#"><i class="icon icon-quill"></i></a></span></div>
+            </div>
+            <div class="datos_generales">
+                <p>© Copyright 2022 - Alejandro Martín Vega - Escritor. <br> Todos los derechos reservados.<br> Vedia, Buenos Aires, Argentina. <br> +549-2364 349168</p>
+            </div>
+        </div>    
+        <div class="hecho">
+            <p>Hecho por <a href="https://vegavictor90.github.io/portfolio/#" target="_blank">Victor Martin Vega</a></p>
+        </div>    
+    </footer>
+</html>
