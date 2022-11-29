@@ -12,6 +12,7 @@ addEventListener("DOMContentLoaded", () => {
     const inicio = document.querySelector(".inicio")
     const libros = document.querySelector(".libros")
     const sociales = document.querySelector(".sociales")
+    const agenda = document.querySelector(".agenda")
     const contacto = document.querySelector(".contacto")
     
     
@@ -29,6 +30,12 @@ addEventListener("DOMContentLoaded", () => {
     }    
     if(sociales) {
         sociales.addEventListener("click", () => {
+            const menu_items = document.querySelector(".menu_items")
+            menu_items.classList.toggle("action")
+        })
+    }    
+    if(agenda) {
+        agenda.addEventListener("click", () => {
             const menu_items = document.querySelector(".menu_items")
             menu_items.classList.toggle("action")
         })
