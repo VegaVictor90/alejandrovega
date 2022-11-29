@@ -75,7 +75,6 @@ nav  i{
     color:var(--color-secundario);
     padding: 5px;
     border-radius: 50%;
-    border: 0.5px solid;
 }
 header nav ul li a{
     width: 100px;
@@ -321,6 +320,20 @@ header nav ul.action{
     }
     .fisico_oculto .oculto p{
         padding: 10px;
+    }
+    #agenda.container_cuarto{
+        height: auto;
+    }
+    #agenda.container_cuarto h4{
+        margin-top: 65px;
+    }
+    div.cuarto{
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+    }
+    table{
+        padding: 35px 0;
     }
     
 
@@ -735,7 +748,60 @@ header nav ul.action{
     height: 100vh;
     background-color: #ffffff; 
     border-bottom: 1px solid var(--color-primario);   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.container_cuarto h4{
+    height: 45px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cuarto{
+    width: 900px;
+    height: 400px;
+    background-color: #ebe8e8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.img-agenda img{
+    width: 400px;
+    padding: 20px;
+}
+.tabla_eventos{
+    flex-grow: 1;
+}
+table{
+    color: #363535;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+th{
+    padding: 10px 30px;
+    background-color: var(--color-primario);
+    color: #ffffff;
+}
+td{
+    padding: 10px 3px;
+    text-align: center;
+    border-bottom: solid 1px var(--color-primario);
+}
+tbody tr{
+    border: 1px solid var(--color-primario);
+}
+tbody tr:hover{
+    cursor: pointer;
+    background-color: #5c5b5b36;
+    color: #ffffff;
+}
+
 
 /*-----------------------------------------------------------------------------------------------footer*/
 
