@@ -325,7 +325,7 @@ header nav ul.action{
         min-height: 100vw;
     }
     #agenda.container_cuarto h4{
-        margin-top: 65px;
+        margin-top: 40px;
     }
     div.cuarto{
         width: 100vw;
@@ -745,7 +745,7 @@ header nav ul.action{
 
 .container_cuarto{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-primario); 
     border-bottom: 1px solid var(--color-primario);   
     display: flex;
@@ -755,10 +755,13 @@ header nav ul.action{
     align-items: center;
 }
 .container_cuarto h4{
+    width: 100vw;
     height: 45px;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .cuarto{
     width: 900px;
