@@ -322,15 +322,16 @@ header nav ul.action{
         padding: 10px;
     }
     #agenda.container_cuarto{
-        min-height: 100vw;
+        min-height: 100vh;
     }
     #agenda.container_cuarto h4{
-        margin-top: 40px;
+        margin-top: 60px;
     }
     div.cuarto{
         width: 100vw;
         height: auto;
         justify-content: center;
+        margin-bottom: 40px;
     }
     table{
         padding: 35px 0;
@@ -762,6 +763,7 @@ header nav ul.action{
     color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 .cuarto{
     width: 900px;
